@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.11...3.15)
+project(cpp-tutorial LANGUAGES CXX)
+add_library(OperatorOverloadingLib PhoneNum.h PhoneNum.cpp)
+add_executable(OperatorOverloading Prog.cpp)
+target_link_libraries(OperatorOverloading PRIVATE OperatorOverloadingLib)
