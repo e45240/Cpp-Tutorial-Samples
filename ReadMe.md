@@ -8,9 +8,13 @@ To access or contribute the most recent modifications of these samples, find the
 
 ## Running the Samples
 
-Each sample has a separate folder of its own, and is usually in a file named `Prog.cpp`. If you want to build a sample with Microsoft Visual Studio, then you need to create a project and copy the sample into that project by your own.
+Each sample has a separate folder of its own, and is usually in a file named Prog.cpp.
 
-However there's a `Makefile` in each directory, which makes the process of building and running the samples easier in *Linux/Unix* and *Cygwin*. In order to build each sample, simply `cd` to its directory and run `make` to build the required executable. Run `make clean` to clean-up your directory. Also `make full`, first cleans and then rebuilds each sample. 
+- [Configure CLion on Windows](https://www.jetbrains.com/help/clion/quick-tutorial-on-configuring-clion-on-windows.html)
+
+- `git clone https://github.com/e45240/Cpp-Tutorial-Samples.git`
+
+- open the project and view each sample's source code as you wish.
 
 ## References
 
