@@ -10,10 +10,10 @@
 #include <iomanip>
 using namespace std;
 
-void BubbleSort(int ArrayName[] , const int ArraySize , bool (*Compare)(int Var1 ,int Var2));
+void BubbleSort(int ArrayName[] , int ArraySize , bool (*Compare)(int Var1 ,int Var2));
 bool Ascending (int Var1 , int Var2);
 bool Descending(int Var1 , int Var2);
-void PrintArray (const int ArrayName[], const int ArraySize);
+void PrintArray (const int ArrayName[], int ArraySize);
 
 int main()
 {

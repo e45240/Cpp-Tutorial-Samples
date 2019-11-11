@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int main ( void )
+int main ()
 {
 	PhoneNum Num1;
 	cin >> Num1;

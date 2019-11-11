@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 
-int &Func( void )
+int &Func()
 {
 	static int a = 0;
 	cout << "a == " << a << endl;
@@ -24,7 +24,10 @@ int main()
     cout << "x = " << x << endl << "y = " << y << endl;
 	// All operations supposedly performed on the alias (i.e. the reference) are actually performed on the original variable itself.
 	z = y;
-	cout << "z = "<< z ;
+	cout << "z = "<< z << endl;
+    z = 3;
+    cout << "x = " << x << endl << "y = " << y << endl << "z = " << z << endl;
+
 
 	cout << "\nA function returning a reference: \n\n";
 
@@ -33,8 +36,8 @@ int main()
 	Func() += 5;
 	Func();
 
-	cout << "\n\nPress ENTER to exit.\n";
-	cin.get();
+//	cout << "\n\nPress ENTER to exit.\n";
+//	cin.get();
 
 
     return 0;

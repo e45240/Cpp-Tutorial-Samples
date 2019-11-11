@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-int main ( void )
+int main ()
 {
 	int n = 5;
 	char c = 'c';
@@ -18,7 +18,7 @@ int main ( void )
 	void * vPtr;
 
 	vPtr = &n;
-	cout << *(int *)vPtr << endl;
+	cout << *(int *)vPtr << endl; // 5 equivalent *((int *)vPtr)
 	vPtr = &c;
 	cout << *(char *)vPtr << endl;  // It could have been *(int*)... it's not a syntax error,
 									//  but a logic error. Because char is 1B but int is 

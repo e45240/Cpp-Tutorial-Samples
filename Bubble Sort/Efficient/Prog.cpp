@@ -2,8 +2,8 @@
 #include <iomanip>
 using namespace std;
 
-void PrintArray (int ArrayName[] , const int ArraySize);
-void BubbleSort(int ArrayName[] , const int ArraySize);
+void PrintArray (int [] , int);
+void BubbleSort(int [] , int);
 
 int main()
 {
@@ -38,7 +38,7 @@ void BubbleSort(int ArrayName[] , const int ArraySize)
 		for (int j = 0; j < ArraySize - i ; j++)
 		{
 			if (ArrayName[j] > ArrayName[j+1])
-			//It does the swapping.
+			//It performs the swapping.
 			{
 				Temp = ArrayName[j];
 				ArrayName[j] = ArrayName[j+1];

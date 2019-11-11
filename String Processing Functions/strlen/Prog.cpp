@@ -4,15 +4,19 @@
 ///  string : Null-terminated string
 //	This function returns the number of characters in string, excluding the terminal NULL.
 
-#include <string.h>
-#include <stdio.h>
+#include <cstring>
+#include <cstdio>
 
-int main( void )
-{
-	char buffer[61] = "How long am I?";
-	int  len;
-	len = strlen( buffer );
-	printf( "'%s' is %d characters long\n", buffer, len );
-	
-	return 0;
+int main() {
+    char buffer[61] = "How long am I?";
+    int len;
+    len = strlen(buffer);
+
+    printf("'%s' is %d characters long\n", buffer, len);
+
+    const char *String = "Hello";
+    len = strlen(String);
+    printf("%s is %d characters long\n", String, len);
+
+    return 0;
 }

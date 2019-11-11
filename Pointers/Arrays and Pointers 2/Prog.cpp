@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int main ( void )
+int main ()
 {
 	const int ArraySize = 4;
 	int Array[ArraySize] = {10,11,12,13};

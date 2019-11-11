@@ -7,8 +7,7 @@
 using namespace std;
 
 template <class TypeName>
-void Proceed(TypeName *ArrayName); 
-// When using Template, even in prototype you must mention the name of variables.
+void Proceed(TypeName *);
 
 int main()
 {

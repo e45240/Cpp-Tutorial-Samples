@@ -22,15 +22,14 @@ int main()
 	cout << "Array1 (with 5 integer elements) : " << sizeof (Array1) << endl;
 	cout << "Array1 has " << (sizeof Array1 / sizeof(int)) << " elements." << endl;
 	// When the operand of  sizeof  is a type name then it's necessary to use parantheses.
-
 	cout << "Gotten Array : " << GetArray(Array1,ArraySize) << endl;
-
 	return 0;
 }
 
 size_t GetArray (int *ArrayName , int ArraySize)
 {
+    cout << "(int *) : " << sizeof(int *) << endl;
 	return sizeof ArrayName; 
-	// It dosen't return the size of  Array1  in  main().
-	// It returns the size of  ArrayName  in current function which is a POINTER to an integer.
+	// It doesn't return the size of  Array1  in  main().
+	// It returns the size of  ArrayName  in current function that is a POINTER to an integer.
 }

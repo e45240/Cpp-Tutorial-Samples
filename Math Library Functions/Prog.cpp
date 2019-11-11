@@ -8,8 +8,8 @@ using namespace std;
 
 int main()
 {
-	int Col1 = 13 , Col2 = 15 , Col3 = 12;
-	
+	int Col1 = 16 , Col2 = 18 , Col3 = 12;
+	cout << setiosflags(ios::left);
 	cout << setw(Col1) << "Function Name" << setw(Col2) << "Usage Example" << setw(Col3) <<"Result" << "  " << "Discription\n\n";
 	cout << setw(Col1) << "ceil()" << setw(Col2) << "ceil(-8.5)" << setw(Col3) << ceil(-8.5) << "  " << "Ceiling.Integer more or equal to x." << endl;
 	cout << setw(Col1) << "floor()" << setw(Col2) << "floor(-8.5)" << setw(Col3) << floor(-8.5) << "  " << "Integer less or equal to x.\n";

@@ -10,7 +10,6 @@ int main()
 {
 	const int arraySize = 15;
 	int a[ arraySize ], key, result;
-
 	for ( int i = 0; i < arraySize; i++ )
 	    a[ i ] = 2 * i;   // place some data in array
 

@@ -8,7 +8,7 @@
 // Function Prototype Syntax: Return_Type Function_Name (Type1 [Name1] , Type2 [Name2] , ... );
 // Function Definition Syntax: Return_Type Function_Name (Type1 Name1, Type2 Name2, ...)    {Statements}
 // Functions with empty parameter list is defined as: Return_Type Function_Name (void); or simply: Return_Type Function_Name ();
-// Note that placing a semicolon right after the right pranthesis in the header of the function definition is a synax ERROR.
+// Note that placing a semicolon right after the right pranthesis in the header of the function definition is a syntax ERROR.
 
 #include <iostream>
 using namespace std;
@@ -21,7 +21,7 @@ int main()
 	cout << "How old are you ? ";
 	cin >> Age;
     ShowAge(Age);  // Function Call.
-	
+
     return 0;
 }
 

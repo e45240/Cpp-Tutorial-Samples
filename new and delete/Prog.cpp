@@ -16,14 +16,18 @@
 #include <iostream>
 using namespace std;
 
-int main( void )
+int main()
 {
 	float *ptr;
 	ptr = new float(3.14);
 	cout << *ptr << endl;
 
 	int Size = 10; // using a variable to show it is dynamic.
-	int *pArray = new int[Size];
+	int *pArray = new (nothrow) int[Size];
+	if (pArray == nullptr) {
+	    cout << "not enough memory!" << endl;
+	    return -1;
+	}
 	pArray[0] = 5;
 	pArray[8] = 6;
 	cout << pArray[0] << endl;

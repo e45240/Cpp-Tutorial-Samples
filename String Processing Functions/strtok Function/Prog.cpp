@@ -16,22 +16,20 @@
 #include <string.h>
 #include <stdio.h>
 
-int main( void )
-{
-	char string[] = "A string\tof ,,tokens\nand some  more tokens";
-	char seps[]   = " ,\t\n";
-	char *token;
+int main() {
+    char string[] = "A string\tof ,,tokens\nand some  more tokens";
+    char seps[] = " ,\t\n";
+    char *token;
 
-	printf( "%s\n\nTokens:\n", string );
-	/* Establish string and get the first token: */
-	token = strtok( string, seps );
-	while( token != NULL )
-	{
-		/* While there are tokens in "string" */
-		printf( " %s\n", token );
-		/* Get next token: */
-		token = strtok( NULL, seps );
-	}
-	
-	return 0;
+    printf("%s\n\nTokens:\n", string);
+    /* Establish string and get the first token: */
+    token = strtok(string, seps);
+    while (token != nullptr) {
+        /* While there are tokens in "string" */
+        printf(" %s\n", token);
+        /* Get next token: */
+        token = strtok(nullptr, seps);
+    }
+
+    return 0;
 }

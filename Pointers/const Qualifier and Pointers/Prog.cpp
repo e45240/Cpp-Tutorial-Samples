@@ -13,9 +13,13 @@ int main ()
 	const int *Ptr2 = &x;  // Ptr2 is a pointer to an integer constant.
  	const int *const Ptr3 = &z;  // Ptr3 is a constant pointer to an integer constant.
 
+// 	int const *ptr = &x;
+// 	ptr = &y; // completely acceptable
+// 	*ptr = 8; // is an error
+
 	// Because a pointer holds an address so Ptr1 cannot hold any other ADDRESS.
-	// Ptr1 = &x;  is an error.
-	// *Ptr1 = 7;   completely acceptable.
+//	 Ptr1 = &x;  // is an error.
+//	 *Ptr1 = 7;   // completely acceptable.
 	cout << "x = " << x << endl;
 	*Ptr1 = 7;
 	cout << "New value of x is : " << x << endl;
@@ -27,7 +31,7 @@ int main ()
 	cout << "The value of *Ptr2 is " << *Ptr2 << " and the value of z = " << z << endl;
 	// Ptr3 is a constant pointer to an integer constant, so it cannot change the address it
 	//    holds nor the value of the address it holds. So it's Read-Only.
-	// *Ptr3 = 10;  is an error.
+//	 *Ptr3 = 10;  is an error.
 	// Ptr3 = &x;   is an error too.
 	cout << "The value of *Ptr3 is " << *Ptr3 << endl; // Read-Only
 	

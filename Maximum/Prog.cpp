@@ -4,9 +4,10 @@ using namespace std;
 int maxim (int x , int y , int z)   // both function prototype and definition.(with no ;).
 {
 	int greatest;
-	x > y ? greatest = x : greatest = y;
-	greatest < z ? greatest = z : greatest ;
-
+//	x > y ? greatest = x : greatest = y;
+	greatest = x > y ? x : y;
+//	greatest < z ? greatest = z : greatest ;
+    greatest = greatest < z ? z : greatest;
 	return greatest;
 }
 

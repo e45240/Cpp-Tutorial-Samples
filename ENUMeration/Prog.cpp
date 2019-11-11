@@ -14,6 +14,8 @@ int main()
 {
 	enum TSeasons {SPRING = 1, SUMMER, AUTUMN, WINTER};
 	TSeasons season;
+
+	cout << season << endl;
 	int num1;
 
 	cout << "Enter a month number : ";

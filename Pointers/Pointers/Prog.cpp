@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	int Var = 5;
-	int *VarPoint; // It is said that VarPoint is of type ' int * ' which stores an address.
+	int *VarPoint; // It is said that VarPoint is of type 'int *' that stores an address.
 	
 	VarPoint = &Var;  // & unary operator returns the address of the variable.
 //  In General the statement :  VarPoint = Var;  is an error.
@@ -17,7 +17,9 @@ int main()
 	
 	cout << "The VALUE which is pointed by VarPoint is : " << *VarPoint << endl;
 //  * unary operator returns the value of an address. See the difference in these 2 statements.
+//  address of the variable 'Var'
 	cout << "The ADDRESS which is pointed by VarPoint is : " << VarPoint << endl;
+//	address of the pointer 'VarPoint'
 	cout << "The address of VarPoint itself is : " << &VarPoint << endl << endl;
 
 	cout << "Enter a new value for VarPoint : ";

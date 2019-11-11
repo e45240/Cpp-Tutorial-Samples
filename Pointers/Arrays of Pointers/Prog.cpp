@@ -1,33 +1,32 @@
 // Arrays of Pointers and passing them to functions.
-#include <stdio.h>
+#include <cstdio>
 
-void PrintOutOf(char **StrSet,int Index);
-void PrintOutOf2(char *StrSet[] , int Index);
+void PrintOutOf(const char **, int);
 
-int main()
-{
-	char * StringSet[4] = {"Hello","World","Hi","Universe"};
-	for (int i = 0 ; i < 4 ; i++)
-	{
-		printf("%s\n",StringSet[i]);
-	}
+void PrintOutOf2(const char *StrSet[], int Index);
 
-	PrintOutOf(StringSet,1);
-	PrintOutOf2(StringSet,2);
+int main() {
+//	char * StringSet[4] = {"Hello","World","Hi","Universe"};
+    // ISO C++11 does not allow conversion from string literal to 'char *'
+    const char * StringSet[4] = {"Hello", "World", "Hi", "Universe"};
+    for (auto & i : StringSet) {
+        printf("%s\n", i);
+    }
 
-	return 0;
+    PrintOutOf(StringSet, 1);
+    PrintOutOf2(StringSet, 2);
+
+    return 0;
 }
 
-void PrintOutOf(char **StrSet,int Index)
-{
-	printf("\n%s\n",*(StrSet+Index));
-	printf("%s\n",StrSet[Index]);
+void PrintOutOf(const char **StrSet, int Index) {
+    printf("\n%s\n", *(StrSet + Index));
+    printf("%s\n", StrSet[Index]);
 
 }
 
-void PrintOutOf2(char *StrSet[] , int Index)
-{
-	printf("\n%s\n",*(StrSet+Index));
-	printf("%s\n",StrSet[Index]);
+void PrintOutOf2(const char *StrSet[], int Index) {
+    printf("\n%s\n", *(StrSet + Index));
+    printf("%s\n", StrSet[Index]);
 
 }

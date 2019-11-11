@@ -7,6 +7,8 @@ endif ()
 project(cpp-tutorial
         VERSION 1.0.0
         DESCRIPTION "a project forked from sinairv/Cpp-Tutorial-Samples")
+set(CMAKE_CXX_STANDARD 11)
+
 add_subdirectory(Aliases)
 add_subdirectory("Arrays/Array in Functions")
 add_subdirectory("Arrays/Arrays")

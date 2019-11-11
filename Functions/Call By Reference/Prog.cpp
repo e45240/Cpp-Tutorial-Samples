@@ -25,10 +25,10 @@ int main()
  
 int squareByValue( int a )
 {
-	return a *= a;   // caller's argument not modified
+	return a *= a;   // caller's argument not changed
 }
  
 void squareByReference( int &cRef )
 {
-    cRef *= cRef;    // caller's argument modified
+    cRef *= cRef;    // caller's argument changed
 }

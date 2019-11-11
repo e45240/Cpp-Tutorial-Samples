@@ -1,9 +1,9 @@
 // INLINE FUNCTIONS
 // When a function name is preceeded by the qualifer: inline  it means that in the compiled
-///		version of the program replace each function call by the function body itself.
+// version of the program replace each function call by the function body itself.
 // So it can make the program faster in run time.
 // But it makes the program larger if the function is called some times.
-// So it is recommanded only for small functions.
+// So it is recommended only for small functions.
 
 #include <iostream>
 #include <iomanip>

@@ -14,14 +14,23 @@
 #include <iomanip>
 using namespace std;
 
-int main( void )
+int main()
 {
 	char String1[13] = "Hello World!";
-	char *String2 = "Hi Universe!";
+//	char *String2 = "Hi Universe!";
 
-	cout << String1 << endl;
-	cout << String2 << endl;
+	// ISO C++ 11 does not allow conversion from the string literal to 'char *'
+	const char * String2 = "Hi Universe!";
+//	const char *const String2 = "Hi Universe!";
 
+    cout << String1 << endl;
+    cout << String2 << endl;
+
+    String2 = String1;
+    cout << String1 << endl;
+    cout << String2 << endl;
+
+	// number of the input character + one '\0'
 	cin >> setw(13) >> String1;
 	cout << String1 << endl;
 

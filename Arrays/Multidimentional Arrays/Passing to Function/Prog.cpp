@@ -1,4 +1,4 @@
-// Here a 2_dimentional array is passed to a function which uses only a row of it.
+// Here a 2_dimensional array is passed to a function that uses only a row of it.
 // Refer to line 32.
 
 #include <iostream>

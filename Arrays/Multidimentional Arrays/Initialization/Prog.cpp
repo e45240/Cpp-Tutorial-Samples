@@ -1,9 +1,9 @@
 // In double-subscripted arrays the first subscript is often called the row subscript, and the
-///		second one is called the column subscript.
+// second one is called the column subscript.
 // If double-subscripted array b is initialized as b[m][n] then it is called an m-by-n array.
-// You see that each group of numbers initialize the rows respectively.
+// You see that each group of numbers initializes the rows respectively.
 // Undefined elements are set to 0.
-// When using Multidimentional Arrays in function prototypes the 2nd, 3rd,... subscripts 
+// When using Multidimensional Arrays in function prototypes the 2nd, 3rd,... subscripts
 //		must be mentioned in the function prototype.
 
 #include <iostream>

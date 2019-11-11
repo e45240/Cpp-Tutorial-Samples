@@ -15,6 +15,10 @@ int main()
 	StaticArray();
 	AutoArray();
 
+	cout << "\nIn the third call : \n";
+	StaticArray();
+	AutoArray();
+
 	return 0;
 }
 
